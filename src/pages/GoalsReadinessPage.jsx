@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight, Target, Briefcase } from 'lucide-react';
+import { Target, Briefcase } from 'lucide-react';
 
 export default function GoalsReadinessPage({ profile, onNavigate }) {
   const [targetGoal, setTargetGoal] = useState(profile.targetSolved || 500);
@@ -175,17 +175,6 @@ export default function GoalsReadinessPage({ profile, onNavigate }) {
               ))}
             </div>
           </div>
-        </div>
-
-        {/* Step Forward Action */}
-        <div style={{ marginTop: '28px', display: 'flex', justifyContent: 'flex-end' }}>
-          <button
-            onClick={() => onNavigate('p5')}
-            className="editorial-button"
-          >
-            <span>View Full Live Dashboard</span>
-            <ArrowRight size={14} />
-          </button>
         </div>
       </div>
     </section>

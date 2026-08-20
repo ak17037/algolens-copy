@@ -1,18 +1,17 @@
 import React from 'react';
 import { ArrowUp } from 'lucide-react';
-import { SIDEBAR_ITEMS } from './Sidebar';
 
-export default function Footer({ onScrollTop, onNavigate }) {
+export default function Footer({ onScrollTop }) {
   return (
     <footer
       style={{
         borderTop: '1px solid var(--line)',
-        padding: '28px 0 24px',
+        padding: '24px 0',
         marginTop: '40px',
         background: 'var(--panel)'
       }}
     >
-      <div className="wrap" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+      <div className="wrap">
         <div
           style={{
             display: 'flex',
@@ -46,30 +45,6 @@ export default function Footer({ onScrollTop, onNavigate }) {
             </div>
           </div>
 
-          {/* Quick Page Jumper Chips */}
-          <div style={{ display: 'flex', gap: '4px', alignItems: 'center', flexWrap: 'wrap' }}>
-            {SIDEBAR_ITEMS.map((p) => (
-              <button
-                key={p.id}
-                onClick={() => onNavigate(p.id)}
-                className="mono"
-                title={p.label}
-                style={{
-                  background: 'var(--paper-2)',
-                  border: '1px solid var(--line)',
-                  borderRadius: 'var(--radius-sm)',
-                  padding: '3px 8px',
-                  fontSize: '0.68rem',
-                  color: 'var(--ink-dim)',
-                  cursor: 'pointer',
-                  transition: 'all 0.15s ease'
-                }}
-              >
-                {p.num}
-              </button>
-            ))}
-          </div>
-
           {/* Scroll to Top */}
           <button
             onClick={onScrollTop}
@@ -77,38 +52,20 @@ export default function Footer({ onScrollTop, onNavigate }) {
             style={{
               background: 'var(--paper-2)',
               border: '1px solid var(--line)',
-              padding: '6px 12px',
+              padding: '6px 14px',
               borderRadius: 'var(--radius-full)',
               color: 'var(--ink)',
               cursor: 'pointer',
               display: 'flex',
               alignItems: 'center',
               gap: '6px',
-              fontSize: '0.72rem',
+              fontSize: '0.74rem',
               fontWeight: 600
             }}
           >
             <ArrowUp size={13} color="var(--primary)" />
             <span>Top</span>
           </button>
-        </div>
-
-        <div
-          style={{
-            borderTop: '1px solid var(--line)',
-            paddingTop: '14px',
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            fontFamily: 'var(--font-mono)',
-            fontSize: '0.7rem',
-            color: 'var(--ink-faint)',
-            flexWrap: 'wrap',
-            gap: '8px'
-          }}
-        >
-          <span>AlgoLens © 2026 — Unified CP Intelligence</span>
-          <span>Fast, Modern &amp; Smooth</span>
         </div>
       </div>
     </footer>

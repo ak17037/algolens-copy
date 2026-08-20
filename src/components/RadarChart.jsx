@@ -163,24 +163,10 @@ export default function RadarChart({
       {/* Interactive Sliders */}
       {interactive && (
         <div style={{ marginTop: '16px', width: '100%', maxWidth: '300px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <span className="mono" style={{ fontSize: '0.7rem', color: 'var(--ink-dim)' }}>
               Tune Skill Weights
             </span>
-            <button
-              onClick={() => setValues(initialValues)}
-              className="mono"
-              style={{
-                background: 'none',
-                border: 'none',
-                fontSize: '0.68rem',
-                color: 'var(--primary)',
-                cursor: 'pointer',
-                fontWeight: 600
-              }}
-            >
-              Reset
-            </button>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px' }}>

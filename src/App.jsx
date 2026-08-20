@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Sidebar, { SIDEBAR_ITEMS } from './components/Sidebar';
 import TopHeader from './components/TopHeader';
-import PagePagination from './components/PagePagination';
 import Footer from './components/Footer';
 
 // 6 Streamlined Core Pages
@@ -137,17 +136,10 @@ export default function App() {
         >
           <div className="active-page-stage">
             {renderCurrentPage()}
-
-            <div className="wrap">
-              <PagePagination
-                activePageId={activePageId}
-                onNavigate={handleNavigate}
-              />
-            </div>
           </div>
         </main>
 
-        <Footer onScrollTop={handleScrollTop} onNavigate={handleNavigate} />
+        <Footer onScrollTop={handleScrollTop} />
       </div>
     </div>
   );

@@ -7,14 +7,13 @@ import {
   Target,
   Layers,
   Check,
-  ChevronDown,
-  ChevronLeft
+  ChevronDown
 } from 'lucide-react';
 import { PROFILES } from '../data/mockData';
 
 export const SIDEBAR_ITEMS = [
   { id: 'p1', num: '01', label: 'Overview', icon: Compass },
-  { id: 'p2', num: '02', label: 'The Problem', icon: ArrowLeftRight },
+  { id: 'p2', num: '02', label: 'Current Progress', icon: ArrowLeftRight },
   { id: 'p3', num: '03', label: 'Analytics Engine', icon: BarChart3 },
   { id: 'p4', num: '04', label: 'Goals & Readiness', icon: Target },
   { id: 'p5', num: '05', label: 'Live Dashboard', icon: LayoutDashboard },
@@ -96,25 +95,6 @@ export default function Sidebar({
             </div>
           )}
         </div>
-
-        {/* Toggle Button */}
-        <button
-          onClick={onToggleCollapse}
-          title={collapsed ? 'Expand' : 'Collapse'}
-          style={{
-            background: 'var(--paper-2)',
-            border: '1px solid var(--line)',
-            borderRadius: 'var(--radius-sm)',
-            padding: '5px',
-            cursor: 'pointer',
-            display: collapsed ? 'none' : 'flex',
-            alignItems: 'center',
-            color: 'var(--ink-dim)',
-            transition: 'background 0.15s ease'
-          }}
-        >
-          <ChevronLeft size={14} />
-        </button>
       </div>
 
       {/* User Switcher Pill */}

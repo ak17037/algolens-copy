@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
 
 export default function AnalyticsPage({ profile, onNavigate }) {
   const [daysSolved, setDaysSolved] = useState([
@@ -162,17 +161,6 @@ export default function AnalyticsPage({ profile, onNavigate }) {
               </button>
             ))}
           </div>
-        </div>
-
-        {/* Step Forward Action */}
-        <div style={{ marginTop: '28px', display: 'flex', justifyContent: 'flex-end' }}>
-          <button
-            onClick={() => onNavigate('p4')}
-            className="editorial-button"
-          >
-            <span>Track Goals &amp; Readiness</span>
-            <ArrowRight size={14} />
-          </button>
         </div>
       </div>
     </section>

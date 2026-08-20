@@ -8,12 +8,12 @@ export default function TechStackPage({ onScrollTop, onNavigate }) {
   return (
     <section className="page-section" id="p6">
       <div className="wrap">
-        <div className="idx">06 — TECH STACK</div>
+        <div className="idx">06 — TECH STACK &amp; SYLLABUS</div>
         <h2 className="editorial-h2" style={{ marginTop: '10px' }}>
-          What powers it.
+          Built on Core Frontend &amp; React Fundamentals.
         </h2>
         <p className="editorial-lede">
-          A conventional, well-understood stack — nothing exotic, chosen to be built and maintained by a small team.
+          Structured around key syllabus benchmarks: Semantic HTML &amp; CSS, Modern JavaScript &amp; GitHub, DOM Manipulation, and React Component Architecture.
         </p>
 
         {/* 4 Cards Grid */}
@@ -82,7 +82,7 @@ export default function TechStackPage({ onScrollTop, onNavigate }) {
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <Layers size={16} color="var(--primary)" />
               <span style={{ fontWeight: 700, fontSize: '1.05rem', color: 'var(--ink)' }}>
-                Architecture Blueprint: {TECH_STACK[selectedLayerIndex].layer}
+                Syllabus &amp; Implementation Breakdown: {TECH_STACK[selectedLayerIndex].layer}
               </span>
             </div>
             <span className="mono" style={{ fontSize: '0.72rem', color: 'var(--primary)', fontWeight: 600 }}>
@@ -119,27 +119,10 @@ export default function TechStackPage({ onScrollTop, onNavigate }) {
             padding: '20px 0',
             borderTop: '1px solid var(--line)',
             display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            flexWrap: 'wrap',
-            gap: '16px'
+            justifyContent: 'flex-end',
+            alignItems: 'center'
           }}
         >
-          <div style={{ display: 'flex', gap: '12px' }}>
-            <button
-              onClick={() => onNavigate('p1')}
-              className="editorial-button"
-            >
-              <span>Back to Overview (01)</span>
-            </button>
-            <button
-              onClick={() => onNavigate('p5')}
-              className="editorial-button secondary"
-            >
-              <span>Open Dashboard (05)</span>
-            </button>
-          </div>
-
           <button
             onClick={onScrollTop}
             className="editorial-button secondary"

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { convertScore } from '../data/conversionMap';
-import { ArrowRight, Calculator } from 'lucide-react';
+import { Calculator } from 'lucide-react';
 
 export default function ProblemPage({ onNavigate }) {
   const [inputPlatform, setInputPlatform] = useState('leetcode_rating');
@@ -11,9 +11,9 @@ export default function ProblemPage({ onNavigate }) {
   return (
     <section className="page-section" id="p2">
       <div className="wrap">
-        <div className="idx">02 — THE PROBLEM</div>
+        <div className="idx">02 — CURRENT PROGRESS</div>
         <h2 className="editorial-h2" style={{ marginTop: '10px' }}>
-          Five platforms, five different languages for the same skill.
+          Four platforms, four different languages for the same skill.
         </h2>
         <p className="editorial-lede">
           LeetCode counts problems. Codeforces counts rating. CodeChef counts stars. None of them agree on what "good" looks like — so the one question every student asks, <i style={{ color: 'var(--primary)' }}>am I improving?</i>, has nowhere to be answered.
@@ -193,17 +193,6 @@ export default function ProblemPage({ onNavigate }) {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Step Forward Action */}
-        <div style={{ marginTop: '28px', display: 'flex', justifyContent: 'flex-end' }}>
-          <button
-            onClick={() => onNavigate('p3')}
-            className="editorial-button"
-          >
-            <span>Explore Analytics Engine</span>
-            <ArrowRight size={14} />
-          </button>
         </div>
       </div>
     </section>

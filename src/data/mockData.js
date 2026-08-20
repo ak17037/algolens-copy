@@ -280,41 +280,43 @@ export const RADAR_PRESETS = {
 
 export const TECH_STACK = [
   {
-    layer: '01. Frontend',
-    subtitle: 'Client Interface & Dynamic Visuals',
+    layer: '01. HTML & CSS',
+    subtitle: 'Semantic Markup & Modern CSS Architecture',
     techs: [
-      { name: 'React 18 / 19', role: 'Component hierarchy & state engine' },
-      { name: 'Tailwind / Vanilla CSS', role: 'Editorial token system & responsive layout' },
-      { name: 'Interactive SVG / Canvas', role: 'Custom dynamic Radar charts & progress arcs' },
-      { name: 'Lucide Icons', role: 'Minimalist semantic iconography' }
+      { name: 'Semantic HTML5', role: 'Accessible structural elements (<header>, <main>, <section>, <aside>, <footer>)' },
+      { name: 'CSS Variables & Tokens', role: 'Curated design system with HSL colors, typography & fluid sizing tokens' },
+      { name: 'Responsive Flexbox & Grid', role: 'Multi-column dashboard layouts, hero grids & adaptive cards' },
+      { name: 'Glassmorphism & Transitions', role: 'Backdrop blur filters, interactive hover states & micro-animations' }
     ]
   },
   {
-    layer: '02. Backend & Engine',
-    subtitle: 'Normalization & Scoring Pipeline',
+    layer: '02. JavaScript & Git',
+    subtitle: 'ES6+ Logic & Clean Component Architecture',
     techs: [
-      { name: 'Node.js & Express', role: 'High-throughput API microservices' },
-      { name: 'Rating Normalizer', role: 'Cross-platform difficulty equivalence math' },
-      { name: 'Task Queue (BullMQ)', role: 'Asynchronous platform scrape & sync jobs' },
-      { name: 'Rate Limiter', role: 'Adaptive platform backoff & proxy rotation' }
+      { name: 'Modern ES6+ Syntax', role: 'Arrow functions, destructuring, spread operators & template literals' },
+      { name: 'Array & Object Methods', role: 'Data transformations via .map(), .filter(), .reduce() and .findIndex()' },
+      { name: 'Modular Folder Structure', role: 'Clean separation of /pages, /components, /data and styling' },
+      { name: 'GitHub & Clean Code', role: 'Semantic commit practices, strict naming conventions & oxlint standards' }
     ]
   },
   {
-    layer: '03. Database & Cache',
-    subtitle: 'Persistence & Session Security',
+    layer: '03. DOM Manipulation',
+    subtitle: 'Event Handling & Dynamic UI Rendering',
     techs: [
-      { name: 'MongoDB / PostgreSQL', role: 'User profiles, solve timeline, platform credentials' },
-      { name: 'Redis Cache', role: '15-minute live platform response caching' },
-      { name: 'JWT & Bcrypt', role: 'Encrypted handle verification & token auth' }
+      { name: 'Reactive DOM Updates', role: 'State-driven UI re-rendering without manual imperativism' },
+      { name: 'Synthetic Event Handling', role: 'onClick, onChange, onKeyDown and hover event listeners' },
+      { name: 'Interactive SVG Trigonometry', role: 'Dynamic radar polygon calculations using Math.sin() and Math.cos()' },
+      { name: 'Smooth Animation Frames', role: 'RequestAnimationFrame interpolation for radar chart morphing' }
     ]
   },
   {
-    layer: '04. Data & AI Coaching',
-    subtitle: 'Diagnosis & Personalized Plans',
+    layer: '04. React Fundamentals',
+    subtitle: 'Component Hierarchy & State Management',
     techs: [
-      { name: 'Gemini / OpenAI API', role: 'Contextual coaching diagnosis & practice generation' },
-      { name: 'Platform APIs / Scrapers', role: 'LeetCode, Codeforces, CodeChef data ingest' },
-      { name: 'Readiness Classifier', role: 'FAANG / FinTech company topic requirement benchmarks' }
+      { name: 'JSX & Functional Components', role: 'Reusable, modular component tree with declarative markup' },
+      { name: 'Props & Unidirectional Flow', role: 'Parent-to-child data pipelines and callback event passing' },
+      { name: 'useState Hook', role: 'Local state management for profile switching, sliders & active filters' },
+      { name: 'useEffect Hook', role: 'Lifecycle handling for keyboard navigation, timers & chart animations' }
     ]
   }
 ];

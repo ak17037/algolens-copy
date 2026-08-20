@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
 import { PROFILES } from '../data/mockData';
 
 export default function DashboardPage({ profile, onSelectProfile, onNavigate }) {
@@ -256,17 +255,6 @@ export default function DashboardPage({ profile, onSelectProfile, onNavigate }) 
               See Analytics Engine →
             </button>
           </div>
-        </div>
-
-        {/* Step Forward Action */}
-        <div style={{ marginTop: '28px', display: 'flex', justifyContent: 'flex-end' }}>
-          <button
-            onClick={() => onNavigate('p6')}
-            className="editorial-button"
-          >
-            <span>Inspect Tech Stack</span>
-            <ArrowRight size={14} />
-          </button>
         </div>
       </div>
     </section>

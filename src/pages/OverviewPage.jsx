@@ -92,7 +92,7 @@ export default function OverviewPage({ profile, onNavigate }) {
                 onClick={() => onNavigate('p2')}
                 className="editorial-button secondary"
               >
-                <span>View Disparity Matrix</span>
+                <span>View Current Progress</span>
               </button>
             </div>
           </div>
